@@ -13,4 +13,4 @@ def downloadVideo(videoID):
     return send_file(video.streams.get_highest_resolution().download(), as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
